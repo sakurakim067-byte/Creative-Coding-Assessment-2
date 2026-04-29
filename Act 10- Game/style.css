@@ -1,0 +1,45 @@
+#game{           
+    width:600px;
+    height:255px;
+    border:2px solid rgb(255,255,255);
+    background:lightblue;
+    overflow:hidden;
+    position:relative;
+}
+
+
+#pink{
+    width:50px;
+    height:70px;
+    background:pink;
+    position:absolute;
+    left:50px;
+    top:180px;
+}
+
+#enemy{
+    width:40px;
+    height:40px;
+    background:blue;
+    border-radius:50%;
+    position:absolute;
+    left:560px;
+    top:200px;
+    animation:move 1.7s infinite linear;
+}
+
+.animate{
+    animation:jump 800ms linear;
+}
+
+@keyframes move{
+    0%{left:560px;}
+    100%{left:-40px;}
+}
+
+@keyframes jump{
+    0%{top:180px;}
+    30%{top:110px;}
+    70%{top:110px;}
+    100%{top:180px;}
+}
